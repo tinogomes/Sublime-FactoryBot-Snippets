@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[trait :$1 do
+  $0
+end]]></content>
+  <tabTrigger>fbtt</tabTrigger>
+  <scope>source.ruby, source.ruby.rails, source.ruby.rspec</scope>
+  <description>trait do ... end</description>
+</snippet>

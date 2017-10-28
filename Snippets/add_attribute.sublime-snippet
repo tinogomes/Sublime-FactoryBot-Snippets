@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[add_attribute(:$1) { $0 }]]></content>
+  <tabTrigger>fbaa</tabTrigger>
+  <scope>source.ruby, source.ruby.rails, source.ruby.rspec</scope>
+  <description>add_attribute(:field) { ... }</description>
+</snippet>

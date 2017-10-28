@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[transient do
+  $0
+end]]></content>
+  <tabTrigger>fbtr</tabTrigger>
+  <scope>source.ruby, source.ruby.rails, source.ruby.rspec</scope>
+  <description>transient do ... end</description>
+</snippet>

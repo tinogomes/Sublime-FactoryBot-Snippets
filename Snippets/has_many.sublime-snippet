@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[transient do
+  n_times ${0:3}
+end
+
+after(:create) do |${1:${TM_FILENAME/(\w+)s\.rb/\1/g}}, evaluator|
+  create_list(:${2}, evaluator.n_times, $1: $1)
+end]]></content>
+  <tabTrigger>fbhm</tabTrigger>
+  <scope>source.ruby, source.ruby.rails, source.ruby.rspec</scope>
+  <description>Prepare HasMany association</description>
+</snippet>

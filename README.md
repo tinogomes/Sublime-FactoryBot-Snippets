@@ -2,22 +2,28 @@
 
 ## Included Snippets
 
-`fac` -> `factory :name, :class, :parent, :aliases do ... end`
+### For create a new factory
 
-`seq` -> `sequence(:attribute, initial value) { |n| "#{n}" }`
+* `fac` -> `factory :name, :class, :parent, :aliases do ... end`
 
-`fbaf` -> `attributes_for(:model, attributes)`
+### For factory definition
 
-`fbc` -> `create(:model, attributes)`
+* `seq` -> `sequence(:attribute, initial value) { |n| "#{n}" }`
+* `ass` -> `association :field_name, factory: :factory_name, strategy: :build/:create`
+* `fbtt` -> `trait do ... end`
+* `fbtr` -> `transient do ... end`
+* `fbaa` -> `add_attribute(:field) { ... }`
 
-`fbcl` -> `create_list(:model, 3, attributes)`
+#### ... and callbacks
 
-`fbb` -> `build(:model, attributes)`
+* `after` -> `after(:create|:build|:stub) { |resource| ... }`
+* `before` -> `before(:create) { |resource| ... }`
 
-`fbbs` -> `build_stubbed(:model, attributes)`
+### Using
 
-`fbbl` -> `build_list(:model, 3, attributes)`
-
-`after` -> `after(:create|:build|:stub) { |resource| ... }`
-
-`before` -> `before(:create) { |resource| ... }`
+* `fbc` -> `create(:model, attributes)`
+* `fbcl` -> `create_list(:model, 3, attributes)`
+* `fbb` -> `build(:model, attributes)`
+* `fbbs` -> `build_stubbed(:model, attributes)`
+* `fbbl` -> `build_list(:model, 3, attributes)`
+* `fbaf` -> `attributes_for(:model, attributes)`
